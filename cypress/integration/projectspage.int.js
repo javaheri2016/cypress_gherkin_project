@@ -1,15 +1,12 @@
 import { When, Then, Given, And } from '@badeball/cypress-cucumber-preprocessor';
+import homePageElems from '../pageObjects/homePage';
+import projectPageElems from '../pageObjects/projectPage';
 
-Given("User opens 'javaheri.pl' website", () => {
-    cy.visit("https://javaheri.pl/");
-});
+const l = new homePageElems()
+const pr = new projectPageElems()
 
-When("User clicks on the 'Projekty' button from header", () => {
-    cy.get('#prime_nav li.menu-item-35 a').click();
-});
-
-Then("User see text 'Zrealizowane strony'", () => {
-    cy.contains('Zrealizowane strony').should("be.visible");
+Given("User opens projects website", () => {
+    pr.projectpage()
 });
 
 And("User clicks on all realized projects", () => {

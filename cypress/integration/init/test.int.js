@@ -1,4 +1,5 @@
-import{ When, Then} from '@badeball/cypress-cucumber-preprocessor';
+import { Given, When, Then } from "cypress-cucumber-preprocessor/steps.js";
+
 
 When ("I visit javaheri.pl", ()=> {
     cy.visit("https://javaheri.pl/");

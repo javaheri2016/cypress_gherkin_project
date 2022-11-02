@@ -1,3 +1,8 @@
+This project uses:
+- Cypress
+- Gherkin syntax
+- Page Object Model pattern
+
 debug mode
 ```npm run cypress:open```
 
