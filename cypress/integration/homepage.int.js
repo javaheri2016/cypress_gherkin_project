@@ -9,6 +9,7 @@ const bl = new blogPageElems()
 
 Given("User opens 'javaheri.pl' website", () => {
     cy.visit("https://javaheri.pl/");
+    h.closeCookies()
 });
 
 Then( "I should see a text",() => {
