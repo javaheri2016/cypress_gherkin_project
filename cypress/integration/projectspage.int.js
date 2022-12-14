@@ -9,7 +9,7 @@ Given("User opens projects website", () => {
     pr.projectpage()
 });
 
-And("User clicks on all realized projects", () => {
+Then("User clicks on all realized projects", () => {
     let countLink = 0;
     let countWithoutLink = 0;
     cy.get('[data-id="a2f8e70"] .elementor-widget-image').each(($el) => {

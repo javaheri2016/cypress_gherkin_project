@@ -33,7 +33,7 @@ When("User clicks on the Projekty button from header", () => {
 });
 
 When("User clicks on the Dowiedz się button from header", () => {
-    l.projectsHeader()
+    l.learnMoreBtn()
 });
 
 Then("User see text Kursy i osiągnięcia", () => {
